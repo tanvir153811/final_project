@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> kindergarten website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-child"></i>kidzies</a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#teacher">teacher</a>
+        <a href="#pricing">pricing</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home background" id="home">
+
+    <div class="content">
+        <h1>welcome to kidzies</h1>
+        <h3>making education more fun.</h3>
+        <p>Kidzies is a diverse, close-knit community of students and teachers. Here students persue academic concentrations, learn practical knowledge and reimagine the Future.</p>
+        <a href="#" class="btn">learn more</a>
+    </div>
+
+    <div class="image">
+        {% comment %} <img src="images/home-img.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/home-img.png' %}">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features up-and-down" id="features">
+
+    <div class="box-container">
+
+        <h3 class="title">why childrens love us</h3>
+
+        <div class="box">
+            {% comment %} <img src="images/left-icon1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/left-icon1.png' %}">
+            <div class="info">
+                <h3>funny conversations</h3>
+                <p>Here teachers teaches their students through funny conversations, practical examples!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/left-icon2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/left-icon2.png' %}">
+            <div class="info">
+                <h3>Many activities</h3>
+                <p>Our educational institution have lots of activities beside study like sports, debate club, cultural clubs and Manu more! </p>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/left-icon3.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/left-icon3.png' %}">
+            <div class="info">
+                <h3>fun non-stop</h3>
+                <p>Here students don't feel any awkwardness because we treat everyone equally with lots of fun!</p>
+            </div>
+        </div>
+
+    </div>
+
+    {% comment %} <img class="stick" src="images/stick.png" alt=""> {% endcomment %}
+    <img src="{% static 'images/stick.png' %}">
+
+    <div class="box-container">
+
+        <h3 class="title">why parents choose us</h3>
+
+        <div class="box">
+            {% comment %} <img src="images/right-icon1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/right-icon1.png' %}">
+            <div class="info">
+                <h3>Continuous monitoring</h3>
+                <p>We also have   a community who always monito students every time!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/right-icon2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/right-icon2.png' %}">
+            <div class="info">
+                <h3>Professionalism teachers</h3>
+                <p>Every school should have professional and responsible teachers. And guess what, we have the best ones!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/right-icon3.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/right-icon3.png' %}">
+            <div class="info">
+                <h3>Developed programs</h3>
+                <p>We include most of the programs relate with the world study curriculum!</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- about section starts  -->
+
+<section class="about background" id="about">
+
+    <div class="image">
+        {% comment %} <img src="images/about-img.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/about-img.png' %}">
+    </div>
+
+    <div class="content">
+        <h3>a word about us</h3>
+        <p>We are excited to welcome your child into our exciting, rich and engaging kindergarten and preschool programs, designed especially for them. Our qualified Early Childhood Teachers are ready to inspire little minds and develop a love of learning, setting them up to be school ready.</p>
+        <p>Along with our high-quality education programs we offer the additional benefits to support busy families including extended hours, sports facility,cultural activities prepared in little minds for learning and much more!</p>
+        <a href="#" class="btn">learn more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services up-and-down" id="services">
+
+    <h1 class="heading"> what we teach your childrens </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            {% comment %} <img src="images/s1.jpg" alt=""> {% endcomment %}
+            <img src="{% static 'images/s1.jpg' %}">
+            <div class="info">
+                <h3>words and letters teaching</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/s2.jpg" alt=""> {% endcomment %}
+            <img src="{% static 'images/s2.jpg' %}">
+            <div class="info">
+                <h3>clay and crafting</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/s3.jpg" alt=""> {% endcomment %}
+            <img src="{% static 'images/s3.jpg' %}">
+            <div class="info">
+                <h3>drawing classes</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/s4.jpg" alt=""> {% endcomment %}
+            <img src="{% static 'images/s4.jpg' %}">
+            <div class="info">
+                <h3>english classes</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/s5.jpg" alt=""> {% endcomment %}
+            <img src="{% static 'images/s5.jpg' %}">
+            <div class="info">
+                <h3>playground for childrens</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/s6.jpg" alt=""> {% endcomment %}
+            <img src="{% static 'images/s6.jpg' %}">
+            <div class="info">
+                <h3>sports events</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- teacher section starts  -->
+
+<section class="teacher background" id="teacher">
+
+    <h1 class="heading">our amazing teachers</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            {% comment %} <img src="images/teacher-1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/teacher-1.png' %}">
+            <h3>Tajnin Rahman</h3>
+            <span>teacher</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <p>I love seeing the development in the Foundation students and the enthusiasm they have for learning new things. Each day is a new experience for them.Outside school I love playing cricket  and watching movie  too. I like going for walks by the river.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/teacher-2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/teacher-2.png' %}">
+            <h3>Tapu Khan</h3>
+            <span>teacher</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <p>I love coming to work each day at kidzies. I feel very privileged to work alongside such a professional, hardworking and committed staff, a very supportive parent community and fantastic children who bring a smile to my face as I watch them grow, learn and play. I love the culture that exists at the school. </p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/teacher-3.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/teacher-3.png' %}">
+            <h3>Fatima Rahman</h3>
+            <span>teacher</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <p>I teach Foundation and Music at our school.  I love that the children have access to a range of different musical instruments and are able to learn through Creative Arts.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/teacher-4.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/teacher-4.png' %}">
+            <h3>Ibrahim Patwary</h3>
+            <span>teacher</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <p>I love being a Foundation teacher at kidzies . It’s a privilege to teach the first year of a child’s educational journey and see such growth in a fun and stimulating environment. Away from school I love spending time with family and keeping active.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- teacher section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing up-and-down" id="pricing">
+
+    <h1 class="heading">our pricing plans</h1>
+
+    <div class="box-container">
+
+        <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
+            <h3>weekly</h3>
+            <div class="price"><span>$</span>20</div>
+            <p>This plan costs just $20/weekly * and is an advertisement-free site for children. We do not allow third-party advertising through our website or mobile app. This allows children to navigate through  content and focus on learning and playing without being distracted.</p>
+            <a href="#" class="btn">select plan</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg2.png) no-repeat;">
+            <span class="choise">best <br> choise</span>
+            <h3>monthly</h3>
+            <div class="price"><span>$</span>50</div>
+            <p>This plan costs just $50/every month* and this is the best plan  for children. We do not allow third-party advertising through our website or mobile app. This allows children to navigate through Kidzies content and focus on learning and playing without being distracted.</p>
+            <a href="#" class="btn">select plan</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg3.png) no-repeat;">
+            <h3>yearly</h3>
+            <div class="price"><span>$</span>250</div>
+            <p>This plan costs just $250/year* and is an advertisement-free site for children.24/7 access benefit and one guide teacher always for help the children  .Unlimited classes facilities and many more facility are included.</p>
+            <a href="#" class="btn">select plan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact background" id="contact">
+
+    <div class="row">
+
+        <div class="contact-info">
+
+            <div class="box">
+                <h3 class="title">contact details</h3>
+                <p> <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh </p>
+                <p> <i class="fas fa-envelope"></i> tanvir@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> 01304201395 </p>
+            </div>
+
+            <div class="box">
+                <h3 class="title">follow us</h3>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">newsletter</h3>
+               <form action="">
+                   <input type="email" placeholder="enter your email">
+                   <input type="submit" class="btn" value="send">
+               </form>
+            </div>
+
+        </div>
+
+        <form action="" class="contact-form" method="POST">
+
+            <h3>contact us</h3>
+            {% csrf_token %}
+            <input type="text" placeholder="name" class="box" name="name">
+            <input type="email" placeholder="email" class="box" name="email">
+            <input type="number" placeholder="number" class="box" name="phone">
+            <textarea placeholder="message" class="box message" name="message" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit"  class="btn" value="send message">
+
+        </form>
+
+    </div>
+
+    <div class="image">
+        {% comment %} <img src="images/contact-img.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/contact-img.png' %}">
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
+
+</body>
+</html>
